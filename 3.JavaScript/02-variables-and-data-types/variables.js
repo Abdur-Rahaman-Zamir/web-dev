@@ -1,8 +1,6 @@
-//start variables of js 
-let name = "Abdur Rahman";
-console.log(name);
-let age = 25;
-console.log(age);
-let className = 'B.Tech in Computer Science';
-console.log(className);
-// end of variables of js
+//const pi = 3.14;
+//console.log(pi);
+const pi = 3.14;
+console.log(pi);
+var radius = 5;
+var area = pi * radius * radius;
