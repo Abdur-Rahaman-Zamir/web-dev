@@ -1,0 +1,13 @@
+function addNumbers(...nums) {
+  let total = 0;
+  for (let n of nums) {
+    total += n;
+  }
+  return total;
+}
+
+console.log(addNumbers(10, 20, 30));       // 60
+console.log(addNumbers(5, 15, 25, 35, 45)); // 125
+
+
+
