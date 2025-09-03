@@ -37,3 +37,18 @@ let [top1, top2, ...others] =number;
 console.log(top1);   
 console.log(top2);   
 console.log(others);  
+
+//showing destructuring in function."
+
+
+function showStudent([name, age, area, [cls, marks]]) {
+ console.log(`Name: ${name},
+     Age: ${age}, 
+     Area: ${area}, 
+     Class: ${cls}, 
+     Marks: ${marks}`);
+}
+
+let firstBoy = ["Yasa", 22, "Naikanda", ["Five", 390]];
+
+showStudent(firstBoy);
