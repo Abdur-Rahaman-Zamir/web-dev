@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Form Tag Example</title>
+</head>
+
+<body> 
+    <h1 color="blue">HTML5 Form Tag Example</h1>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>name</label> <input type="text" name="username" value="abdur rahaman"><br><br>
+            <label>password</label> <input type="password" name="password"><br><br>
+            <label>gender</label> <input type="radio" name="gender" id="male"><label for="male">male</label>
+            <input type="radio" name="gender" id="male"><label for="female">female</label><br><br>
+            <lebel>hobbies</label><input type="checkbox" name="hobby1" id="hobby1"><label for="hobby1">reading</label>
+                <input type="checkbox" name="hobby1" id="hobby1"><label for="hobby1">reading</label><br><br>
+                <label>country</label>
+                <select name="country">
+                    <option value="bangladesh">bangladesh</option>
+                    <option value="india">india</option>
+                    <option value="pakistan">pakistan</option>
+                    <option value="srilanka">srilanka</option>
+                </select><br><br>
+                <label>message</label><textarea name="message" rows="4"
+                    cols="30">enter your message here</textarea><br><br>
+                <label>cars</label><select>
+                    <optgroup label="swedish cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                    </optgroup>
+                    <optgroup label="german cars">
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </optgroup>
+                </select><br><br>
+                <label>cars</label>
+                <input list="cars">
+                <datalist id="cars">
+                    <option value="volvo">
+                    <option value="saab">
+                    <option value="mercedes">
+                    <option value="audi">
+                </datalist><br><br>
+                <label>upload file</label><input type="file" accept="image/*" name="fileupload"><br><br>
+                <input type="submit" value="submit form" /><input type="reset" value="reset form" />
+                <input type="button" value="click me" onclick="alert('button clicked')" />
+                <input type="image" src="nature.jpeg" alt="submit" width="48" height="48">
+                <br><label> select color</label><intut type="color" name=""><br><br>
+            </fieldset>
+    </form>
+</body>
+
+</html>
