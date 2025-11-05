@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #202124;
+    color: #e8eaed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Product Sans', Arial, sans-serif;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #303134;
+    border: 1px solid #5f6368;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 600px;
+    margin: 0 auto 40px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons span {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.shortcuts {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.shortcut {
+    text-align: center;
+    color: #bdc1c6;
+    cursor: pointer;
+}
+
+.shortcut img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.add {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #303134;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
