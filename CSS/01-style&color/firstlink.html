@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website Example</title>
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-2">
+        <h1 class="text-center">Welcome to My Website</h1>
+        <p class="text-center muted">
+            This page is styled with our custom <strong>style.css</strong> file.
+        </p>
+
+        <!-- Card Example -->
+        <div class="row mt-2">
+            <div class="col-4">
+                <div class="card">
+                    <h3>Card Title 1</h3>
+                    <p>This is a simple example of a card layout using CSS.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <h3>Card Title 2</h3>
+                    <p>Cards are useful for grouping content neatly.</p>
+                    <a href="#" class="btn btn-ghost">Details</a>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <h3>Card Title 3</h3>
+                    <p>They are fully responsive and adapt to small screens.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Example -->
+        <section class="mt-2">
+            <h2>Contact Form</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" class="input" placeholder="Enter your name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" class="input" placeholder="Enter your email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" rows="4" class="input" placeholder="Write your message"></textarea><br><br>
+
+                <button type="submit" class="btn">Send</button>
+                <button type="reset" class="btn btn-ghost">Clear</button>
+            </form>
+        </section>
+
+        <!-- Table Example -->
+        <section class="mt-2">
+            <h2>Sample Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Akif</td>
+                        <td>12th</td>
+                        <td>89%</td>
+                    </tr>
+                    <tr>
+                        <td>Arsh</td>
+                        <td>10th</td>
+                        <td>92%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-header mt-2 text-center">
+        <p class="muted">&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
