@@ -1,0 +1,145 @@
+/* Modern Colorful Calculator Display — by ChatGPT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.calculator {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  width: 360px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Header */
+.calc-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.calc-title {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.calc-subtitle {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 3px 0 0 0;
+}
+
+/* Display */
+.display {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.history {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+  height: 20px;
+  overflow: hidden;
+}
+.output {
+  font-size: 2em;
+  font-weight: 600;
+  color: #fff;
+  overflow-x: auto;
+}
+
+/* Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Buttons Base Style */
+.btn {
+  border: none;
+  border-radius: 14px;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Colorful button styles */
+.btn.num {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+.btn.operator {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+.btn.func {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: #222;
+}
+.btn.equal {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  grid-column: span 2;
+}
+.btn.zero {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #845ec2, #d65db1);
+}
+
+/* Hover Effects */
+.btn:hover {
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+  filter: brightness(1.05);
+}
+
+/* Footer Note */
+.footer {
+  margin-top: 15px;
+  text-align: center;
+}
+.note {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Scrollbar style for display */
+.output::-webkit-scrollbar {
+  height: 4px;
+}
+.output::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
