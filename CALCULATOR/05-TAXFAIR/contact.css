@@ -1,0 +1,111 @@
+/* ===== Global ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: navy;
+  padding: 12px 30px;
+  color: white;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 45px;
+  margin-right: 10px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.header a.active {
+  color: #FFA500; /* Saffron */
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to right, navy, olive);
+  color: white;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #FFA500;
+}
+
+.subtitle {
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.contact-card {
+  background: white;
+  color: #001f3f;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  border-top: 4px solid #FFA500;
+}
+
+/* ===== Email Box ===== */
+.email-box {
+  margin-top: 40px;
+  font-size: 1.1em;
+  color: #fff3cd;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 55px;
+  margin-bottom: 8px;
+}
