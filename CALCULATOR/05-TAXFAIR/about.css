@@ -1,0 +1,186 @@
+/* ===== General Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background: linear-gradient(to right, navy, #004aad);
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h2 {
+  font-weight: 700;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ff9933; /* saffron */
+}
+
+/* ===== About Section ===== */
+.about {
+  text-align: center;
+  padding: 70px 10%;
+  background-color: #f7f9fc;
+}
+
+.about h1 {
+  font-size: 2.3rem;
+  color: navy;
+  margin-bottom: 20px;
+}
+
+.about .intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* ===== Team Section ===== */
+.team {
+  text-align: center;
+  padding: 60px 10%;
+  background: linear-gradient(to right, #fff8e1, #f9f9f9);
+}
+
+.team h2 {
+  color: #004aad;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.member {
+  background: white;
+  border-left: 6px solid olive;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.member h3 {
+  color: navy;
+  margin-bottom: 5px;
+}
+
+.member p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.team-note {
+  font-size: 1rem;
+  color: #222;
+  max-width: 850px;
+  margin: 20px auto;
+  line-height: 1.7;
+  border-top: 3px solid #ff9933;
+  padding-top: 15px;
+}
+
+/* ===== Address Section ===== */
+.address {
+  text-align: center;
+  padding: 60px 10%;
+  background-color: #f3f7f3;
+}
+
+.address h2 {
+  color: olive;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.address p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: navy;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto 10px;
+
+  /* Sticky Navbar Effect */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+/* Fade-in Animation */
+.member {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.member.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+}

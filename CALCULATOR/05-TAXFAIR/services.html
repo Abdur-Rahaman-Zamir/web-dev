@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxfair Advisory | Services</title>
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.jpg" alt="Taxfair Advisory Logo">
+      <h2>Taxfair Advisory</h2>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services">
+    <h1>আমাদের সেবা সমূহ</h1>
+    <div class="service-container">
+      <div class="service-box" onclick="openPopup('popup1')">
+        <h3>ইনকাম ট্যাক্স ই-ফাইলিং</h3>
+        <p>সহজ ও দ্রুত অনলাইন ট্যাক্স ফাইলিং সেবা।</p>
+      </div>
+      <div class="service-box" onclick="openPopup('popup2')">
+        <h3>লোন প্রজেক্ট রিপোর্ট</h3>
+        <p>ব্যাংক অনুমোদনের জন্য নির্ভুল প্রজেক্ট রিপোর্ট।</p>
+      </div>
+      <div class="service-box" onclick="openPopup('popup3')">
+        <h3>ইন্সুরেন্স (ভেহিকেল, লাইফ ও হেলথ)</h3>
+        <p>বিশ্বাসযোগ্য ও সহজ ইন্সুরেন্স গাইডলাইন।</p>
+      </div>
+      <div class="service-box" onclick="openPopup('popup4')">
+        <h3>ট্রাস্ট ও সোসাইটি রেজিস্ট্রেশন</h3>
+        <p>নির্ভুল ডকুমেন্ট সহ ট্রাস্ট রেজিস্ট্রেশন সেবা।</p>
+      </div>
+      <div class="service-box" onclick="openPopup('popup5')">
+        <h3>কন্ট্রাকটর লাইসেন্স</h3>
+        <p>সরকারি ও বেসরকারি লাইসেন্স প্রাপ্তির পরামর্শ।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POPUP MODALS ===== -->
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <h2>ইনকাম ট্যাক্স ই-ফাইলিং</h2>
+      <p>আমরা আপনাকে আয়কর রিটার্ন অনলাইনে সঠিকভাবে জমা দিতে সাহায্য করি। প্রতিটি ধাপ সহজ ও স্বচ্ছভাবে সম্পন্ন করা হয়।</p>
+      <button onclick="closePopup('popup1')">Close</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup2">
+    <div class="popup-content">
+      <h2>লোন প্রজেক্ট রিপোর্ট</h2>
+      <p>ব্যাংক বা ফিনান্স সংস্থার জন্য পেশাদারভাবে তৈরি প্রজেক্ট রিপোর্ট প্রদান করি, যাতে সহজে লোন অনুমোদন পাওয়া যায়।</p>
+      <button onclick="closePopup('popup2')">Close</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup3">
+    <div class="popup-content">
+      <h2>ইন্সুরেন্স (ভেহিকেল, লাইফ ও হেলথ)</h2>
+      <p>আমাদের মাধ্যমে আপনি আপনার গাড়ি, জীবন এবং স্বাস্থ্যের জন্য সর্বোত্তম ইন্সুরেন্স বেছে নিতে পারবেন।</p>
+      <button onclick="closePopup('popup3')">Close</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup4">
+    <div class="popup-content">
+      <h2>ট্রাস্ট ও সোসাইটি রেজিস্ট্রেশন</h2>
+      <p>ট্রাস্ট এবং সোসাইটি রেজিস্ট্রেশনের জন্য প্রয়োজনীয় সমস্ত কাগজ ও আইনি সহায়তা আমরা প্রদান করি।</p>
+      <button onclick="closePopup('popup4')">Close</button>
+    </div>
+  </div>
+
+  <div class="popup" id="popup5">
+    <div class="popup-content">
+      <h2>কন্ট্রাকটর লাইসেন্স</h2>
+      <p>বিভিন্ন সরকারি দপ্তরে কন্ট্রাকটর লাইসেন্স পেতে আমরা সম্পূর্ণ প্রক্রিয়া পরিচালনা করি।</p>
+      <button onclick="closePopup('popup5')">Close</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="logo.jpg" alt="Taxfair Advisory Logo">
+      <p>© 2025 Taxfair Advisory | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="services.js"></script>
+</body>
+</html>
