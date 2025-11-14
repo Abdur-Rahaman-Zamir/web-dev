@@ -1,0 +1,241 @@
+/* ==================== BASIC STYLES ==================== */
+body {
+  margin: 0;
+  font-family: "Kalpurush", Arial, sans-serif;
+  background: linear-gradient(to bottom, #f3cadd, #97d3f3); /* light pink → sky blue */
+}
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Bengali", "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f2f6fb;
+  color: #222;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+/* ==================== HEADER (light pink) ==================== */
+.site-header {
+  background-color: #f8adc7; 
+  padding: 12px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* ===== Header Layout Adjustment ===== */
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* লোগো ও টেক্সট বাঁদিকে, ন্যাভ ডানদিকে */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* লোগো বড় করা */
+.logo {
+  width: 160px;   /* 🔹 আগে ছিল 150px */
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #fbf9f5;
+}
+
+/* স্কুলের নাম বড় ও সুন্দরভাবে */
+.brand-text h1 {
+  font-size: 2.2rem;   /* 🔹 বড় করা হয়েছে */
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.brand-text .sub {
+  font-size: 1.1rem;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* Navigation বার ডানদিকে */
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ff9800;
+}
+
+
+/* ===== Navigation ===== */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: #1a237e;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #ff9800;
+}
+
+
+/* Navigation বার ডানদিকে */
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ff9800;
+}
+
+
+/* ==================== PAGE TITLE ==================== */
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
+  color: #333;
+}
+
+.sub-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* ==================== GALLERY GRID ==================== */
+.gallery-container {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+}
+
+.grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid #ffffff;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* ==================== LIGHTBOX ==================== */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lightbox-img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ==================== FOOTER ==================== */
+.site-footer {
+  background-color: #ff8c00; /* Orange */
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-small {
+  width: 55px;
+  border-radius: 8px;
+}
+
+.footer-right nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer-right nav a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  margin-top: 5px;
+  font-size: 14px;
+}

@@ -1,0 +1,356 @@
+/* ===== DG Model Academy Mission — dg.css ===== */
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Bengali", "Poppins", sans-serif;
+}
+
+body {
+  background-color: #abcef2;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+/* ===== Header Layout Adjustment ===== */
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* লোগো ও টেক্সট বাঁদিকে, ন্যাভ ডানদিকে */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* লোগো বড় করা */
+.logo {
+  width: 160px;   /* 🔹 আগে ছিল 150px */
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #fbf9f5;
+}
+
+/* স্কুলের নাম বড় ও সুন্দরভাবে */
+.brand-text h1 {
+  font-size: 2.2rem;   /* 🔹 বড় করা হয়েছে */
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.brand-text .sub {
+  font-size: 1.1rem;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* Navigation বার ডানদিকে */
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ff9800;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: linear-gradient(to right, #2e7d32, #1a237e);
+  color: rgb(227, 229, 226);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.greeting {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #c9bfb0;
+}
+
+.headline {
+  font-size: 2.2rem;
+  margin: 15px 0;
+}
+
+.lead {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.quran {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.quran p {
+  text-align: center;
+  font-weight: bold;
+  color: #ffeb3b;
+}
+
+.quran ol {
+  margin-left: 25px;
+}
+
+.intro {
+  max-width: 700px;
+  margin: 20px auto;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+.cta-row {
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffb74d;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #ff9800;
+  color: #ff9800;
+}
+
+.btn.ghost:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* ===== About Section ===== */
+.about {
+  padding: 60px 0;
+  text-align: center;
+  background: #f0f4f7;
+}
+
+.about h3 {
+  color: #1a237e;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 300px;
+  margin: 15px;
+  border-top: 5px solid #2e7d32;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+/* ===== Gallery ===== */
+.gallery {
+  padding: 60px 0;
+  text-align: center;
+  background: #e3f2fd;
+}
+
+.gallery h3 {
+  color: #004d40;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.media {
+  background: #bbdefb;
+  padding: 60px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #1a237e;
+}
+.gallery .media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery .media img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+/* ===== Teachers ===== */
+.teachers {
+  padding: 60px 0;
+  background: #fafafa;
+  text-align: center;
+}
+
+.teachers h3 {
+  color: #2e7d32;
+}
+
+/* ===== Contact ===== */
+.contact {
+  padding: 60px 0;
+  background: #f0f4f7;
+  text-align: center;
+}
+
+.contact h3 {
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.contacts {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.contacts li {
+  margin: 8px 0;
+}
+
+.contacts a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contacts a:hover {
+  color: #ff9800;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #ff9800;
+  color: #fff;
+  padding: 25px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  font-size: 0.85rem;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    width: 100%;
+    background: #1a237e;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .main-nav.show {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,273 @@
+/* ===== DG Model Academy Mission — About Page ===== */
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Bengali", "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f2f6fb;
+  color: #222;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== Header Layout Adjustment ===== */
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* লোগো ও টেক্সট বাঁদিকে, ন্যাভ ডানদিকে */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* লোগো বড় করা */
+.logo {
+  width: 160px;   /* 🔹 আগে ছিল 150px */
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #fbf9f5;
+}
+
+/* স্কুলের নাম বড় ও সুন্দরভাবে */
+.brand-text h1 {
+  font-size: 2.2rem;   /* 🔹 বড় করা হয়েছে */
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.brand-text .sub {
+  font-size: 1.1rem;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* Navigation বার ডানদিকে */
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ff9800;
+}
+
+
+/* ===== Navigation ===== */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: #1a237e;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #ff9800;
+}
+
+/* ===== Hero Section ===== */
+.about-hero {
+  background: linear-gradient(to right, #2e7d32, #1a237e);
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.about-hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.about-hero .tagline {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== About Content ===== */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px 0;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1 1 60%;
+  font-size: 1rem;
+  color: #333;
+}
+
+.about-text h3 {
+  color: #1a237e;
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+.about-text ul {
+  list-style: disc;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+  background: #e3f2fd;
+  padding: 60px 0;
+  text-align: center;
+  border-top: 4px solid #2e7d32;
+}
+
+.contact h3 {
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.contacts {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.contacts li {
+  margin: 8px 0;
+}
+
+.contacts a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contacts a:hover {
+  color: #ff9800;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #ff9800;
+  color: #fff;
+  padding: 25px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  font-size: 0.85rem;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text, .about-image {
+    flex: 1 1 100%;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

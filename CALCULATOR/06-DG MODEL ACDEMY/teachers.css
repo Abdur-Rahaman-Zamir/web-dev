@@ -1,0 +1,234 @@
+/* ============================
+   GLOBAL SETTINGS
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #ffe6f2, #e6f5ff); /* Light Pink + Sky Blue */
+  color: #222;
+}
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ==================== HEADER (light pink) ==================== */
+.site-header {
+  background-color: #9eedb2; 
+  padding: 12px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* ===== Header Layout Adjustment ===== */
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* লোগো ও টেক্সট বাঁদিকে, ন্যাভ ডানদিকে */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* লোগো বড় করা */
+.logo {
+  width: 160px;   /* 🔹 আগে ছিল 150px */
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #fbf9f5;
+}
+
+/* স্কুলের নাম বড় ও সুন্দরভাবে */
+.brand-text h1 {
+  font-size: 2.2rem;   /* 🔹 বড় করা হয়েছে */
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.brand-text .sub {
+  font-size: 1.1rem;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* Navigation বার ডানদিকে */
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ff9800;
+}
+
+/* ============================
+   PAGE TITLE
+============================ */
+.title-section {
+  text-align: center;
+  padding: 35px 0 10px;
+}
+
+.title-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+}
+
+.title-section .sub-title {
+  font-size: 16px;
+  color: #444;
+  margin-top: 5px;
+}
+
+/* ============================
+   TEACHERS GRID
+============================ */
+.teachers {
+  padding: 20px 0 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 14px;
+  text-align: center;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 17px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3a4f2b;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.role {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.qual {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ============================
+   CONTACT SECTION
+============================ */
+.contact {
+  text-align: center;
+  padding: 25px 0 50px;
+}
+
+.contact h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.contacts {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.contacts li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.contacts a {
+  color: #2a4a8f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ============================
+   FOOTER
+============================ */
+.site-footer {
+  background: #ff8c00; /* Bright Orange */
+  padding: 25px 0;
+  color: white;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-small {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer-right nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 6px;
+  font-weight: 600;
+}
+
+.footer-right nav a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  margin-top: 6px;
+  font-size: 13px;
+}
